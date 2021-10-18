@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images and CSS</title>
+  <style>
+    #rounded{
+        border-radius: 50px;
+    }
+    #thumbnail{
+      width: 150px;
+      border-radius: 4px;
+      padding: 5px;
+      border: 1px solid #ddd;
+    }
+    #responsive{
+      max-width: 100%;
+      height: auto;
+    }
+    #center{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    div.polaroid{
+      width: 80%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20pc 0 rgba(0, 0, 0, .19);
+      margin-bottom: 25px;
+    }
+    div.container{
+      text-align: center;
+      padding: 10px 20px;
+    }
+    #transparent{
+      opacity: .5;
+    }
+  </style>
+</head>
+<body>
+<img id="transparent" src="pictures/roger.jpg" /><br/>
+<div class="polaroid">
+  <img src="pictures/sheets.jpg" style="width: 350px"/>
+  <div class="container">
+    Sheets lol
+  </div>
+</div>
+<img id="rounded" src="pictures/banana.jpg"  /><br/>
+<img id="thumbnail" src="pictures/thumbnail.jpg"  /><br/>
+<img id="responsive" src="pictures/kang.jpg"  /><br/>
+<img id="center" src="pictures/roger.jpg"  /><br/>
+<img id="polaroid" src="pictures/sheets.jpg"  /><br/>
+</body>
+</html>
